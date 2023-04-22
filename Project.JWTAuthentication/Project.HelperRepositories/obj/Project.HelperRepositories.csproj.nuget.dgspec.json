@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj": {}
+    "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj": {}
   },
   "projects": {
-    "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj": {
+    "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj",
+        "projectUniqueName": "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj",
         "projectName": "Project.HelperRepositories",
-        "projectPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj",
+        "projectPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj",
         "packagesPath": "C:\\Users\\aditya_mishra\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\obj\\",
+        "outputPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aditya_mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,10 +41,6 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.16, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.16, )"
             }

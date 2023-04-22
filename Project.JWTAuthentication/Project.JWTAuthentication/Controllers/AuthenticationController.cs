@@ -24,19 +24,13 @@ namespace Project.JWTAuthentication.Controllers
         private readonly IRefreshTokenRepository _refreshTokenRepository;
         private readonly IUserRepository _userRepository;
         private readonly Authenticator _authenticator;
-        private readonly ApplicationDbContext _Context;
-        private readonly AccessTokenGenerator _accessTokenGenerator;
         UserManager<ApplicationUser> _userManager;
-        SignInManager<ApplicationUser> _signInManager;
-        public AuthenticationController(Authenticator authenticator, IUserRepository userRepository, UserManager<ApplicationUser> userManager, AccessTokenGenerator accessTokenGenerator, SignInManager<ApplicationUser> signInManager, ApplicationDbContext Context, RefreshTokenValidator refreshTokenValidator,
+        public AuthenticationController(Authenticator authenticator, IUserRepository userRepository, UserManager<ApplicationUser> userManager, RefreshTokenValidator refreshTokenValidator,
             IRefreshTokenRepository refreshTokenRepository)
         {
             _authenticator = authenticator;
             _userRepository = userRepository;
             _userManager = userManager;
-            _accessTokenGenerator = accessTokenGenerator;
-            _signInManager = signInManager;
-            _Context = Context;
             _refreshTokenValidator = refreshTokenValidator;
             _refreshTokenRepository = refreshTokenRepository;
 

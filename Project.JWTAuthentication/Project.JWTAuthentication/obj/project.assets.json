@@ -975,8 +975,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16"
         },
         "compile": {
           "bin/placeholder/Project.HelperRepositories.dll": {}
@@ -2451,13 +2450,14 @@
     },
     "Project.HelperRepositories/1.0.0": {
       "type": "project",
-      "path": "../Project.DataBase/Project.HelperRepositories.csproj",
-      "msbuildProject": "../Project.DataBase/Project.HelperRepositories.csproj"
+      "path": "../Project.HelperRepositories/Project.HelperRepositories.csproj",
+      "msbuildProject": "../Project.HelperRepositories/Project.HelperRepositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.16",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.16",
       "Project.HelperRepositories >= 1.0.0",
@@ -2491,8 +2491,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj": {
-              "projectPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.DataBase\\Project.HelperRepositories.csproj"
+            "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj": {
+              "projectPath": "D:\\MyProject\\Project.JWTAuthentication\\Project.HelperRepositories\\Project.HelperRepositories.csproj"
             }
           }
         }
@@ -2508,6 +2508,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.16, )"
+          },
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.16, )"
           },
